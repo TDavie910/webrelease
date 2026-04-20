@@ -1,81 +1,76 @@
-body,
-header,
-main,
-footer {
-    background-color: rgb(215, 227, 237);
-    padding: 20px;       
-    margin: 0 0 20px 0;  
-}
-
 body {
     font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    color: blue;
+    color: #1a1c1f;
+    background-color: rgb(215, 227, 237);
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center all inline content */
 }
 
 
+header {
+    padding: 20px;
+    background-color: rgb(200, 220, 235);
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+}
+
 nav {
+    margin-top: 10px;
+    margin-bottom: 20px;
     background-color: rgb(215, 227, 237);
-    border: 2px solid black;  /* fixed border issue */
-    padding: 10px;
-    margin: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 10px 20px;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
-    overflow: hidden;
+    margin: 0;
 }
 
 nav ul li {
-    float: left;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 nav ul li a {
-    display: block;
-    color: rgb(26, 28, 31);
-    text-align: center;  /* fixed typo 'centre' */
-    padding: 18px 22px;
     text-decoration: none;
+    color: rgb(26, 28, 31);
+    padding: 8px 16px;
+    font-weight: 500;
 }
 
 nav ul li a:hover {
     background-color: black;
+    color: white;
 }
-
 
 main {
-    padding: 20px; /* reduced from 250px */
+    padding: 20px;
 }
 
+main section {
+    margin-bottom: 40px;
+}
 
 h2 {
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
 
 p {
-    margin-bottom: 25px; 
-}
-
-form input[type="submit"] {
-    margin-top: 15px; 
-    padding: 8px 16px;
-    background-color: #4CAF50; 
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-form input[type="submit"]:hover {
-    background-color: #45a049; 
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    line-height: 1.5;
 }
 
 
-iframe {
-    width: 100%;
-    height: 450px;
-    border: 0;
+footer {
+    padding: 15px;
+    background-color: rgb(200, 220, 235);
+    border-top: 2px solid black;
 }
